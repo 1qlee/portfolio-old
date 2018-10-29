@@ -1,32 +1,26 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
-import styles from "../components/styles"
-import NavBar from "../components/nav"
-import {BlogContainer, Container} from "../components/containers"
-import {Main} from "../components/main/main"
-import Content from "../components/content"
-import {Card, CardContent} from "../components/card"
+import { graphql } from "gatsby"
+import {Container} from "../components/containers"
+import {MainContainer, MainBlock} from "../components/main"
+import {Excerpt} from "../components/post"
+
+import "./css/reset.css"
 
 export default ({ data }) => (
-  <Main color={styles.teal}>
-    <Container>
-      <NavBar color={styles.teal} />
-      <BlogContainer>
+  <MainContainer>
+    <MainBlock className="clear-nav">
+      <Container>
         {data.allMarkdownRemark.edges.map(({node}) => (
-          <Card key={node.id} photo={node.frontmatter.photo} href={"/blog" + node.fields.slug}>
-            <CardContent>
-              <small className="is-light">{node.frontmatter.tag}</small>
-              <h3>
-                {node.frontmatter.title}
-              </h3>
-              <small className="is-light">{node.frontmatter.date}</small>
-              <p>{node.excerpt}</p>
-            </CardContent>
-          </Card>
+          <Excerpt key={node.id}>
+            <a href={"/blog" + node.fields.slug}>
+              {node.frontmatter.title}
+            </a>
+            <p>{node.frontmatter.date}</p>
+          </Excerpt>
         ))}
-      </BlogContainer>
-    </Container>
-  </Main>
+      </Container>
+    </MainBlock>
+  </MainContainer>
 )
 
 export const query = graphql`
@@ -38,14 +32,11 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
-            tag
-            photo
+            date(formatString: "MMM DD, YYYY")
           }
           fields {
             slug
           }
-          excerpt
         }
       }
     }

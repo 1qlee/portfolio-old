@@ -8,7 +8,7 @@ const Tag = styled.span`
   box-shadow: 0 4px 20px 0 ${styles.shadow};
   color: #fff;
   display: inline-flex;
-  font-family: "Rubik";
+  font-family: "Karla";
   font-size: 0.6rem;
   padding: 0.2rem 0.4rem;
   transition: box-shadow 0.3s ease, transform 0.3s ease;

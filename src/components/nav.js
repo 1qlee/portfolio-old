@@ -2,15 +2,17 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import styles from "./styles"
+import {Container} from "./containers"
 
 const Nav = styled.nav`
   background: #fff;
-  border-radius: 20px 20px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 2rem 1rem;
   width: 100%;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 `
 
 const NavItemsWrapper = styled.div`
@@ -25,9 +27,8 @@ const NavItem = styled.div`
   .nav-link {
     color: ${styles.grey};
     text-decoration: none;
-    font-family: "Rubik";
+    font-family: "Karla";
     font-size: 14px;
-    line-height: 1.5;
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -47,7 +48,8 @@ const Logo = styled.div`
     box-shadow: -1px 2px 12px rgba(0,0,0,0.2);
     color: #fff;
     display: block;
-    font-family: "Rubik";
+    font-family: "Karla";
+    font-size: 18px;
     font-weight: 700;
     height: 35px;
     line-height: 35px;
@@ -79,20 +81,22 @@ class NavBar extends React.Component {
   render() {
     return (
       <Nav>
-        <NavItem>
-          <Logo id="logo" color={this.props.color}><Link to="/">Q</Link></Logo>
-        </NavItem>
-        <NavItemsWrapper>
+        <Container className="container">
           <NavItem>
-            <Link className={this.checkPath("/experience")} to="/experience">Experience</Link>
+            <Logo id="logo" color={this.props.color}><Link to="/">Q</Link></Logo>
           </NavItem>
-          <NavItem>
-            <Link className={this.checkPath("/projects")} to="/projects">Projects</Link>
-          </NavItem>
-          <NavItem>
-            <Link className={this.checkPath("/blog")} to="/blog">Blog</Link>
-          </NavItem>
-        </NavItemsWrapper>
+          <NavItemsWrapper>
+            <NavItem>
+              <Link className={this.checkPath("/experience")} to="/experience">Experience</Link>
+            </NavItem>
+            <NavItem>
+              <Link className={this.checkPath("/projects")} to="/projects">Projects</Link>
+            </NavItem>
+            <NavItem>
+              <Link className={this.checkPath("/blog")} to="/blog">Blog</Link>
+            </NavItem>
+          </NavItemsWrapper>
+        </Container>
       </Nav>
     )
   }

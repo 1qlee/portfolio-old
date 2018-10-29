@@ -1,12 +1,12 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: "18px",
+  baseFontSize: "24px",
   baseLineHeight: 1.5,
   includeNormalize: false,
   googleFonts: [
     {
-      name: 'Rubik',
+      name: 'Karla',
       styles: [
         '400',
         '700',
@@ -21,7 +21,7 @@ const typography = new Typography({
     },
   ],
   headerFontFamily: [
-    "Rubik",
+    "Karla",
     "Avenir Next",
     "Helvetica Neue",
     "Segoe UI",

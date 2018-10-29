@@ -20,6 +20,9 @@ const Content = styled.div`
   &.fade-in-up {
     animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
+  p + p {
+    margin-top: 1rem;
+  }
   @keyframes fadeInUp {
     0% {
       opacity: 0;

@@ -10,6 +10,7 @@ const styles = {
   teal: "#25beec",
   text: "#444",
   whiteLight: "rgba(255,255,255,0.66)",
+  white: "#fff",
 }
 
 export default styles

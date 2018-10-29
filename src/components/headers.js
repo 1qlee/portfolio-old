@@ -29,7 +29,7 @@ const TagHeader = styled.h3`
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   position: relative;
   margin-bottom: 0.2rem !important;
   &::before {
@@ -38,7 +38,7 @@ const TagHeader = styled.h3`
     height: 2px;
     left: 2px;
     position: absolute;
-    top: 4px;
+    top: 6px;
     width: 12px;
   }
 `

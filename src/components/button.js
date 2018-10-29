@@ -9,7 +9,7 @@ const ButtonLink = styled.a`
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-family: "Rubik";
+  font-family: "Karla";
   padding: 0.5rem 1rem;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   text-decoration: none;
