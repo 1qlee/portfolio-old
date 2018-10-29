@@ -57,7 +57,7 @@ class MainContainer extends React.Component {
   // Logic for pathname
   setColor() {
     // Store pathname in a variable
-    let pathname = window.location.pathname
+    const pathname = window.location.pathname
 
     // Initialize main background color based on pathname
     switch(pathname) {
@@ -76,7 +76,7 @@ class MainContainer extends React.Component {
 
   handleScroll() {
     const scrollValue = document.getElementById("main").scrollTop
-    let pathname = window.location.pathname
+    const pathname = window.location.pathname
     let newColor = null
 
     if (pathname === "/experience") {
