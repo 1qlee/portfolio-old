@@ -10,7 +10,7 @@ import {FlexContainer} from "../components/containers"
 import {ImageContainer, Image} from "../components/image"
 
 import AtIcon from "../../assets/at.svg"
-import wonkyu from "./wonkyu_profile.jpg"
+import wonkyu from "./wonkyu.jpg"
 
 import "./css/reset.css"
 

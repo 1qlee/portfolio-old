@@ -6,8 +6,8 @@ import {MainContainer, MainBlock, MainColumn} from "../components/main"
 import {TagHeader} from "../components/headers"
 import Content from "../components/content"
 
-import domahub from "./domahub_ss.png"
-import zltech from "./zl_ss.png"
+import domahub from "./domahub.png"
+import zltech from "./zl.png"
 
 import "./css/reset.css"
 
