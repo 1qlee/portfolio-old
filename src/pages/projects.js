@@ -25,7 +25,7 @@ export default () => (
             <h1>Tasker</h1>
             <TagHeader color={styles.purple}>Task Management App</TagHeader>
             <p>
-              A CRUD web application for creating and managing tasks by organizing them into
+              A simple web application for creating and managing tasks by organizing them into
               lists.
             </p>
           </Content>
