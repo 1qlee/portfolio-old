@@ -17,6 +17,10 @@ const SocialIconsContainer = styled.div`
       margin-right: 1rem;
     }
   }
+  @media only screen and (max-width: 500px) {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
 `
 
 export default () => (
@@ -34,13 +38,13 @@ export default () => (
     }
     render={data => (
       <SocialIconsContainer>
-        <IconLink className="social-icon" href={data.site.siteMetadata.github} target="_blank" rel="noreferrer">
+        <IconLink className="social-icon" href={data.site.siteMetadata.github} target="_blank" rel="noreferrer" title="GitHub">
           <GithubIcon />
         </IconLink>
-        <IconLink className="social-icon" href={data.site.siteMetadata.twitter} target="_blank" rel="noreferrer">
+        <IconLink className="social-icon" href={data.site.siteMetadata.twitter} target="_blank" rel="noreferrer" title="Twitter">
           <TwitterIcon />
         </IconLink>
-        <IconLink className="social-icon" href={data.site.siteMetadata.linkedin} target="_blank" rel="noreferrer">
+        <IconLink className="social-icon" href={data.site.siteMetadata.linkedin} target="_blank" rel="noreferrer" title="Linkedin">
           <LinkedinIcon />
         </IconLink>
       </SocialIconsContainer>

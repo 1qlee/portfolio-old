@@ -15,7 +15,7 @@ import wonkyu from "./wonkyu.jpg"
 import "./css/reset.css"
 
 export default ({ data }) => (
-  <MainContainer>
+  <MainContainer path="index">
     <MainBlock className="clear-nav">
       <FlexContainer>
         <MainColumn>

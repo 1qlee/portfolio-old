@@ -4,16 +4,6 @@ import styles from "./styles"
 const ImageContainer = styled.figure`
   display: block;
   position: relative;
-  &::after {
-    position: absolute;
-    content: "";
-    left: 1rem;
-    top: 2rem;
-    border: 8px solid rgba(0,0,0,0.12);
-    height: 100%;
-    width: 440px;
-    z-index: -1;
-  }
 `
 
 const Image = styled.img`
@@ -29,6 +19,9 @@ const Image = styled.img`
     100% {
       opacity: 1;
     }
+  }
+  @media only screen and (max-width: 840px) {
+    margin: 0 auto;
   }
 `
 

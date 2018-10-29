@@ -13,6 +13,9 @@ const Content = styled.div`
   &.is-flex {
     display: flex;
     align-items: center;
+    @media only screen and (max-width: 500px) {
+      flex-direction: column;
+    }
   }
   &.fade-in-down {
     animation: fadeInDown 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);

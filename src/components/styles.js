@@ -2,7 +2,7 @@ const styles = {
   blue: "#006af5",
   blueLight: "#4678b9",
   green: "#308767",
-  grey: "#6c7886",
+  grey: "#909090",
   orange: "#ff5600",
   purple: "#6c63ff",
   red: "#a32a29",

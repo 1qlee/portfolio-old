@@ -7,17 +7,25 @@ const Main = styled.div`
   background-color: ${props => props.color};
   padding: 1rem;
   overflow-y: auto;
+  overflow-x: hidden;
   transition: background 0.3s ease-in-out;
   height: 100vh;
   width: 100%;
 `
 
 const MainColumn = styled.div`
+  padding: 1rem;
   width: 50%;
   &.is-flex {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @media only screen and (max-width: 840px) {
+      justify-content: center;
+    }
+  }
+  @media only screen and (max-width: 840px) {
+    width: 100%;
   }
 `
 
@@ -27,10 +35,16 @@ const MainBlock = styled.div`
   min-height: calc(100vh - 48px);
   width: 100%;
   &.clear-nav {
-    min-height: calc(100vh - 180px);
+    min-height: calc(100vh - 155px);
   }
   &:not(:last-child) {
     margin-bottom: 1rem;
+  }
+  @media only screen and (max-width: 1320px) {
+    padding: 120px 0;
+  }
+  @media only screen and (max-width: 840px) {
+    padding: 20px 0;
   }
 `
 
@@ -39,11 +53,11 @@ class MainContainer extends React.Component {
     super(props)
     // Bind methods
     this.changeColor = this.changeColor.bind(this)
-    this.handleScroll = this.handleScroll.bind(this);
+    this.handleScroll = this.handleScroll.bind(this)
     // States
     this.state = {
       // If index, then use blue styling, else use green
-      color: this.setColor()
+      color: this.setColor(),
     }
   }
 
@@ -56,18 +70,15 @@ class MainContainer extends React.Component {
 
   // Logic for pathname
   setColor() {
-    // Store pathname in a variable
-    const pathname = window.location.pathname
-
     // Initialize main background color based on pathname
-    switch(pathname) {
-      case "/":
+    switch(this.props.path) {
+      case "index":
         return styles.blue
-      case "/experience":
+      case "experience":
         return styles.green
-      case "/projects":
+      case "projects":
         return styles.purple
-      case "/blog":
+      case "blog":
         return styles.orange
       default:
         return styles.blue
@@ -76,10 +87,9 @@ class MainContainer extends React.Component {
 
   handleScroll() {
     const scrollValue = document.getElementById("main").scrollTop
-    const pathname = window.location.pathname
     let newColor = null
 
-    if (pathname === "/experience") {
+    if (this.props.path === "experience") {
       if (scrollValue > 700) {
         newColor = styles.red
         this.changeColor(newColor)
@@ -89,7 +99,7 @@ class MainContainer extends React.Component {
         this.changeColor(newColor)
       }
     }
-    else if (pathname === "/projects") {
+    else if (this.props.path === "/projects") {
       newColor = styles.purple
       this.changeColor(newColor)
     }
@@ -98,7 +108,7 @@ class MainContainer extends React.Component {
   render() {
     return (
       <Main id="main" color={this.state.color} onScroll={this.handleScroll}>
-        <NavBar color={this.state.color} />
+        <NavBar color={this.state.color} path={this.props.path} />
         {this.props.children}
       </Main>
     )

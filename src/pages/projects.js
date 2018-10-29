@@ -12,7 +12,7 @@ import tasker from "./tasker.png"
 import "./css/reset.css"
 
 export default () => (
-  <MainContainer>
+  <MainContainer path="projects">
     <MainBlock className="clear-nav">
       <FlexContainer>
         <MainColumn>
@@ -23,7 +23,7 @@ export default () => (
         <MainColumn>
           <Content className="fade-in-down">
             <h1>Tasker</h1>
-            <TagHeader color={styles.purple}>Task Management App</TagHeader>
+            <TagHeader color={styles.purple}>Developer</TagHeader>
             <p>
               A simple web application for creating and managing tasks by organizing them into
               lists.

@@ -12,7 +12,7 @@ import zltech from "./zl.png"
 import "./css/reset.css"
 
 export default () => (
-  <MainContainer>
+  <MainContainer path="experience">
     <MainBlock className="clear-nav">
       <FlexContainer>
         <MainColumn>
@@ -22,7 +22,7 @@ export default () => (
         </MainColumn>
         <MainColumn className="is-flex">
           <Content className="fade-in-down" id="domahub">
-            <h1>DomaHub</h1>
+            <h1>DomaHub<span className="is-grey"> (Current)</span></h1>
             <TagHeader color={styles.green}>Co-founder &#38; Developer &#124; July 2016 - Current</TagHeader>
             <p>
               DomaHub is an online platform for domain name portfolio management.
@@ -36,13 +36,13 @@ export default () => (
       </FlexContainer>
     </MainBlock>
     <MainBlock>
-      <FlexContainer>
+      <FlexContainer className="is-mobile">
         <MainColumn>
           <Content id="zltech">
-            <h1>ZL Technologies</h1>
-            <TagHeader color={styles.red}>Product Specialist &#124; July 2015 - April 2016</TagHeader>
+            <h1>ZL Tech<span className="is-grey"> (2015)</span></h1>
+            <TagHeader color={styles.red}>Product Specialist</TagHeader>
             <p>
-              ZL is a leader in the information governance space.
+              ZL is a leading software company in the information governance space.
             </p>
             <p>
               I worked in both Sales Support as well as Marketing. My focus was primarily on understanding the software and effectively communicating it to our customers through marketing campaigns, RFP's, sales meetings, etc.

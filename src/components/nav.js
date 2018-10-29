@@ -6,7 +6,7 @@ import {Container} from "./containers"
 
 const Nav = styled.nav`
   background: #fff;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   width: 100%;
   .container {
     display: flex;
@@ -64,13 +64,13 @@ class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      path: window.location.pathname,
       color: this.props.color,
+      path: this.props.path,
     }
   }
 
-  checkPath(link) {
-    if (this.state.path === link) {
+  checkPath(url) {
+    if (this.state.path === url) {
       return "nav-link is-active";
     }
     else {
@@ -87,13 +87,13 @@ class NavBar extends React.Component {
           </NavItem>
           <NavItemsWrapper>
             <NavItem>
-              <Link className={this.checkPath("/experience")} to="/experience">Experience</Link>
+              <Link className={this.checkPath("experience")} to="/experience">Experience</Link>
             </NavItem>
             <NavItem>
-              <Link className={this.checkPath("/projects")} to="/projects">Projects</Link>
+              <Link className={this.checkPath("projects")} to="/projects">Projects</Link>
             </NavItem>
             <NavItem>
-              <Link className={this.checkPath("/blog")} to="/blog">Blog</Link>
+              <Link className={this.checkPath("blog")} to="/blog">Blog</Link>
             </NavItem>
           </NavItemsWrapper>
         </Container>
