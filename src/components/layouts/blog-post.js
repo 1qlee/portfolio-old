@@ -5,6 +5,8 @@ import {MainContainer, MainBlock} from "../main"
 import {Post} from "../post"
 import Content from "../content"
 
+import "../../pages/css/reset.css"
+
 export default ({ data }) => {
   const post = data.markdownRemark
 

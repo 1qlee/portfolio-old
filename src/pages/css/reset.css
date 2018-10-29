@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 html {
-	overflow-y: hidden;
+	overflow-y: hidden !important;
 }
 .is-grey {
   color: #929292;
