@@ -7,7 +7,7 @@ import {TagHeader} from "../components/headers"
 import Content from "../components/content"
 import Tag from "../components/tag"
 
-import tasker from "../../public/static/images/tasker_ss.png"
+import tasker from "./tasker_ss.png"
 
 import "./css/reset.css"
 
