@@ -1,9 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 import {Container} from "../containers"
-import {MainContainer, MainBlock} from "../main"
+import {Main, MainBlock} from "../main"
 import {Post} from "../post"
+import NavBar from "../nav"
 import Content from "../content"
+import styles from "../styles"
 
 import "../../pages/css/reset.css"
 
@@ -11,7 +13,8 @@ export default ({ data }) => {
   const post = data.markdownRemark
 
   return (
-    <MainContainer>
+    <Main>
+      <NavBar color={styles.blue} path="blog" />
       <MainBlock className="clear-nav">
         <Container>
           <Post>
@@ -23,7 +26,7 @@ export default ({ data }) => {
           </Post>
         </Container>
       </MainBlock>
-    </MainContainer>
+    </Main>
   )
 }
 

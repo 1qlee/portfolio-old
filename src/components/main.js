@@ -78,8 +78,6 @@ class MainContainer extends React.Component {
         return styles.green
       case "projects":
         return styles.purple
-      case "blog":
-        return styles.orange
       default:
         return styles.blue
     }
@@ -115,4 +113,4 @@ class MainContainer extends React.Component {
   }
 }
 
-export {MainContainer, MainBlock, MainColumn}
+export {Main, MainContainer, MainBlock, MainColumn}
