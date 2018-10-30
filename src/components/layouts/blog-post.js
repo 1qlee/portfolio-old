@@ -14,6 +14,7 @@ export default ({ data }) => {
 
   return (
     <Main>
+      <NavBar color={styles.blue} path="blog" />
       <MainBlock className="clear-nav">
         <Container>
           <Post>
