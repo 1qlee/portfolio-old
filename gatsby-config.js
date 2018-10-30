@@ -4,7 +4,7 @@ module.exports = {
     github: 'https://github.com/1qlee',
     linkedin: 'https://www.linkedin.com/in/wonkyulee93/',
     twitter: 'https://twitter.com/wonq33',
-    email: 'mailto:wonq33@gmail.com'
+    email: 'mailto:wonq33@gmail.com',
   },
   plugins: [
     {
@@ -28,7 +28,8 @@ module.exports = {
         }
       }
     },
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
-    'gatsby-transformer-remark'
+    'gatsby-transformer-remark',
   ],
 }

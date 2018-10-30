@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 import {MainContainer, MainBlock, MainColumn} from "../components/main"
 import Content from "../components/content"
 import {Icon} from "../components/icon"
@@ -16,6 +17,11 @@ import "./css/reset.css"
 
 export default ({ data }) => (
   <MainContainer path="index">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Home - Wonkyu Lee</title>
+      <link rel="canonical" href="https://1qlee.com" />
+    </Helmet>
     <MainBlock className="clear-nav">
       <FlexContainer>
         <MainColumn>

@@ -37,6 +37,11 @@ const MainBlock = styled.div`
   &.clear-nav {
     min-height: calc(100vh - 155px);
   }
+  &.has-items-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &:not(:last-child) {
     margin-bottom: 1rem;
   }
@@ -89,17 +94,17 @@ class MainContainer extends React.Component {
 
     if (this.props.path === "experience") {
       if (scrollValue > 700) {
-        newColor = styles.red
+        newColor = styles.blue
         this.changeColor(newColor)
+        if (scrollValue > 1400) {
+          newColor = styles.red
+          this.changeColor(newColor)
+        }
       }
       else {
         newColor = styles.green
         this.changeColor(newColor)
       }
-    }
-    else if (this.props.path === "/projects") {
-      newColor = styles.purple
-      this.changeColor(newColor)
     }
   }
 

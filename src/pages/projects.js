@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import styles from "../components/styles"
 import {FlexContainer} from "../components/containers"
 import {ImageContainer, Image} from "../components/image"
@@ -13,6 +14,11 @@ import "./css/reset.css"
 
 export default () => (
   <MainContainer path="projects">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Projects - Wonkyu Lee</title>
+      <link rel="canonical" href="https://1qlee.com" />
+    </Helmet>
     <MainBlock className="clear-nav">
       <FlexContainer>
         <MainColumn>

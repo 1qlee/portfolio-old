@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "../components/styles"
+import { Helmet } from "react-helmet"
 import {FlexContainer} from "../components/containers"
 import {ImageContainer, Image} from "../components/image"
 import {MainContainer, MainBlock, MainColumn} from "../components/main"
@@ -8,11 +9,17 @@ import Content from "../components/content"
 
 import domahub from "./domahub.png"
 import zltech from "./zl.png"
+import unicorn from "./unicorn.png"
 
 import "./css/reset.css"
 
 export default () => (
   <MainContainer path="experience">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Experience - Wonkyu Lee</title>
+      <link rel="canonical" href="https://1qlee.com" />
+    </Helmet>
     <MainBlock className="clear-nav">
       <FlexContainer>
         <MainColumn>
@@ -23,7 +30,7 @@ export default () => (
         <MainColumn className="is-flex">
           <Content className="fade-in-down" id="domahub">
             <h1>DomaHub<span className="is-grey"> (Current)</span></h1>
-            <TagHeader color={styles.green}>Co-founder &#38; Developer &#124; July 2016 - Current</TagHeader>
+            <TagHeader color={styles.green}>Co-founder &#38; Developer</TagHeader>
             <p>
               DomaHub is an online platform for domain name portfolio management.
             </p>
@@ -35,7 +42,28 @@ export default () => (
         </MainColumn>
       </FlexContainer>
     </MainBlock>
-    <MainBlock>
+    <MainBlock className="has-items-center">
+      <FlexContainer>
+        <MainColumn>
+          <Content id="unicorn">
+            <h1>Unicorn Line<span className="is-grey"> (2018)</span></h1>
+            <TagHeader color={styles.blue}>Developer, Freelance</TagHeader>
+            <p>
+              An online catalog for browsing Unicorn Graphic's line of products.
+            </p>
+            <p>
+              I created an online version of the client's product catalog. I refreshed the catalog design and implemented a CMS for easy editing.
+            </p>
+          </Content>
+        </MainColumn>
+        <MainColumn className="is-flex">
+          <ImageContainer>
+            <Image src={unicorn} />
+          </ImageContainer>
+        </MainColumn>
+      </FlexContainer>
+    </MainBlock>
+    <MainBlock className="has-items-center">
       <FlexContainer className="is-mobile">
         <MainColumn>
           <Content id="zltech">

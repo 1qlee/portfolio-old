@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 import {Container} from "../containers"
 import {Main, MainBlock} from "../main"
 import {Post} from "../post"
@@ -13,7 +14,12 @@ export default ({ data }) => {
   const post = data.markdownRemark
 
   return (
-    <Main>
+    <Main color={styles.blue}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{post.frontmatter.title} - Blog</title>
+        <link rel="canonical" href="https://1qlee.com" />
+      </Helmet>
       <NavBar color={styles.blue} path="blog" />
       <MainBlock className="clear-nav">
         <Container>

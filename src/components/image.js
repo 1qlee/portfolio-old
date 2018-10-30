@@ -8,7 +8,7 @@ const ImageContainer = styled.figure`
 
 const Image = styled.img`
   animation: 0.6s popIn cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  box-shadow: 0 2px 30px 0 ${styles.shadow};
+  box-shadow: 0 10px 30px 0 ${styles.shadow};
   border: 8px solid ${styles.white};
   display: block;
   @keyframes popIn {
