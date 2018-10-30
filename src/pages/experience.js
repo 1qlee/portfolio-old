@@ -43,7 +43,7 @@ export default () => (
       </FlexContainer>
     </MainBlock>
     <MainBlock className="has-items-center">
-      <FlexContainer>
+      <FlexContainer className="is-mobile">
         <MainColumn>
           <Content id="unicorn">
             <h1>Unicorn Line<span className="is-grey"> (2018)</span></h1>
@@ -64,8 +64,13 @@ export default () => (
       </FlexContainer>
     </MainBlock>
     <MainBlock className="has-items-center">
-      <FlexContainer className="is-mobile">
+      <FlexContainer>
         <MainColumn>
+          <ImageContainer>
+            <Image src={zltech} />
+          </ImageContainer>
+        </MainColumn>
+        <MainColumn className="is-flex">
           <Content id="zltech">
             <h1>ZL Tech<span className="is-grey"> (2015)</span></h1>
             <TagHeader color={styles.red}>Product Specialist</TagHeader>
@@ -76,11 +81,6 @@ export default () => (
               I worked in both Sales Support as well as Marketing. My focus was primarily on understanding the software and effectively communicating it to our customers through marketing campaigns, RFP's, sales meetings, etc.
             </p>
           </Content>
-        </MainColumn>
-        <MainColumn className="is-flex">
-          <ImageContainer>
-            <Image src={zltech} />
-          </ImageContainer>
         </MainColumn>
       </FlexContainer>
     </MainBlock>
