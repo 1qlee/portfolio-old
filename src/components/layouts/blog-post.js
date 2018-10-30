@@ -14,14 +14,13 @@ export default ({ data }) => {
 
   return (
     <Main>
-      <NavBar color={styles.blue} path="blog" />
       <MainBlock className="clear-nav">
         <Container>
           <Post>
             <Content>
               <h1>{post.frontmatter.title}</h1>
               <p className="is-grey">{post.frontmatter.date}</p>
-              <p dangerouslySetInnerHTML={{ __html: post.html }}></p>
+              <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
             </Content>
           </Post>
         </Container>
