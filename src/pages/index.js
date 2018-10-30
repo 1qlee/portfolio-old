@@ -38,7 +38,7 @@ export default ({ data }) => (
               Spent the past two years working on <Anchor href="https://www.domahub.com" target="_blank" rel="noreferrer">DomaHub</Anchor>, a domain management platform. Currently looking for a full-time front-end developer position.
             </p>
           </Content>
-          <Content className="is-flex fade-in-up">
+          <Content className="is-flex is-mobile fade-in-up">
             <ButtonLink href={data.site.siteMetadata.email}>
               <Icon>
                 <AtIcon />

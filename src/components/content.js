@@ -13,8 +13,10 @@ const Content = styled.div`
   &.is-flex {
     display: flex;
     align-items: center;
-    @media only screen and (max-width: 500px) {
-      flex-direction: column;
+    &.is-mobile {
+      @media only screen and (max-width: 500px) {
+        flex-direction: column;
+      }
     }
   }
   &.fade-in-down {
