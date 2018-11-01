@@ -30,17 +30,14 @@ const MainColumn = styled.div`
 `
 
 const MainBlock = styled.div`
+  align-items: center;
   background: #fff;
-  padding: 180px 0;
-  min-height: calc(100vh - 48px);
+  display: flex;
+  height: calc(100vh - 40px);
+  justify-content: center;
   width: 100%;
   &.clear-nav {
-    min-height: calc(100vh - 155px);
-  }
-  &.has-items-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: calc(100vh - 155px);
   }
   &:not(:last-child) {
     margin-bottom: 1rem;

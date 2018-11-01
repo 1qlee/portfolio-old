@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import {Container} from "../components/containers"
 import {MainContainer, MainBlock} from "../components/main"
-import {Excerpt} from "../components/post"
+import {Excerpt, Blog} from "../components/post"
 import Content from "../components/content"
 
 import "./css/reset.css"
@@ -15,7 +15,7 @@ export default ({ data }) => (
       <title>Blog - Wonkyu Lee</title>
       <link rel="canonical" href="https://1qlee.com" />
     </Helmet>
-    <MainBlock className="clear-nav">
+    <Blog>
       <Container>
         <Content>
           <h1>2018</h1>
@@ -29,7 +29,7 @@ export default ({ data }) => (
           </Excerpt>
         ))}
       </Container>
-    </MainBlock>
+    </Blog>
   </MainContainer>
 )
 

@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import {Container} from "../containers"
 import {Main, MainBlock} from "../main"
-import {Post} from "../post"
+import {Post, Blog} from "../post"
 import NavBar from "../nav"
 import Content from "../content"
 import styles from "../styles"
@@ -21,7 +21,7 @@ export default ({ data }) => {
         <link rel="canonical" href="https://1qlee.com" />
       </Helmet>
       <NavBar color={styles.blue} path="blog" />
-      <MainBlock className="clear-nav">
+      <Blog>
         <Container>
           <Post>
             <Content>
@@ -31,7 +31,7 @@ export default ({ data }) => {
             </Content>
           </Post>
         </Container>
-      </MainBlock>
+      </Blog>
     </Main>
   )
 }

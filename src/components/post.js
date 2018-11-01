@@ -1,8 +1,17 @@
 import styled from "styled-components"
 import styles from "./styles"
 
+const Blog = styled.div`
+  background: ${styles.white};
+  padding: 3rem 0;
+  display: block;
+  min-height: calc(100% - 115px);
+  box-sizing: border-box;
+  width: 100%;
+`
+
 const Excerpt = styled.div`
-  display: inline-flex;
+  display: flex;
   p {
     color: ${styles.grey};
     margin-right: 1rem;
@@ -65,4 +74,4 @@ const Post = styled.div`
   }
 `
 
-export {Excerpt, Post}
+export {Blog, Excerpt, Post}
