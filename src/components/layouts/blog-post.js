@@ -8,6 +8,8 @@ import NavBar from "../nav"
 import Content from "../content"
 import styles from "../styles"
 
+import favicon from "../../pages/favicon.ico"
+
 import "../../pages/css/reset.css"
 
 export default ({ data }) => {
@@ -19,6 +21,7 @@ export default ({ data }) => {
         <meta charSet="utf-8" />
         <title>{post.frontmatter.title} - Blog</title>
         <link rel="canonical" href="https://1qlee.com" />
+        <link rel="icon" type="image/x-icon" href={favicon} />
       </Helmet>
       <NavBar color={styles.blue} path="blog" />
       <Blog>

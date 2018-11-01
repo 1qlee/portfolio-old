@@ -10,6 +10,7 @@ import Content from "../components/content"
 import domahub from "./domahub.png"
 import zltech from "./zl.png"
 import unicorn from "./unicorn.png"
+import favicon from "./favicon.ico"
 
 import "./css/reset.css"
 
@@ -19,6 +20,7 @@ export default () => (
       <meta charSet="utf-8" />
       <title>Experience - Wonkyu Lee</title>
       <link rel="canonical" href="https://1qlee.com" />
+      <link rel="icon" type="image/x-icon" href={favicon} />
     </Helmet>
     <MainBlock className="clear-nav">
       <FlexContainer>

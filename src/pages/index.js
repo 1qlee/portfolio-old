@@ -12,6 +12,7 @@ import {ImageContainer, Image} from "../components/image"
 
 import AtIcon from "../../assets/at.svg"
 import wonkyu from "./wonkyu.jpg"
+import favicon from "./favicon.ico"
 
 import "./css/reset.css"
 
@@ -21,6 +22,7 @@ export default ({ data }) => (
       <meta charSet="utf-8" />
       <title>Home - Wonkyu Lee</title>
       <link rel="canonical" href="https://1qlee.com" />
+      <link rel="icon" type="image/x-icon" href={favicon} />
     </Helmet>
     <MainBlock className="clear-nav">
       <FlexContainer>

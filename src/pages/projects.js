@@ -9,6 +9,7 @@ import Content from "../components/content"
 import Tag from "../components/tag"
 
 import tasker from "./tasker.png"
+import favicon from "./favicon.ico"
 
 import "./css/reset.css"
 
@@ -18,6 +19,7 @@ export default () => (
       <meta charSet="utf-8" />
       <title>Projects - Wonkyu Lee</title>
       <link rel="canonical" href="https://1qlee.com" />
+      <link rel="icon" type="image/x-icon" href={favicon} />
     </Helmet>
     <MainBlock className="clear-nav">
       <FlexContainer>
