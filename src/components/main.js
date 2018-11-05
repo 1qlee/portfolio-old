@@ -38,6 +38,12 @@ const MainBlock = styled.div`
   width: 100%;
   &.clear-nav {
     height: calc(100vh - 155px);
+    @media only screen and (max-height: 750px) {
+      height: auto;
+    }
+    @media only screen and (max-width: 780px) {
+      height: auto;
+    }
   }
   &:not(:last-child) {
     margin-bottom: 1rem;
