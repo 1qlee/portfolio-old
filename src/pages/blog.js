@@ -2,8 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import {Container} from "../components/containers"
-import {MainContainer, MainBlock} from "../components/main"
 import {Excerpt, Blog} from "../components/post"
+import {MainContainer} from "../components/main"
+import Anchor from "../components/anchor"
 import Content from "../components/content"
 
 import favicon from "./favicon.ico"
@@ -26,9 +27,9 @@ export default ({ data }) => (
         {data.allMarkdownRemark.edges.map(({node}) => (
           <Excerpt key={node.id}>
             <p>{node.frontmatter.date}</p>
-            <a href={"/blog" + node.fields.slug}>
+            <Anchor href={"/blog" + node.fields.slug}>
               {node.frontmatter.title}
-            </a>
+            </Anchor>
           </Excerpt>
         ))}
       </Container>

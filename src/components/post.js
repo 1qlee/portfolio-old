@@ -16,32 +16,6 @@ const Excerpt = styled.div`
     color: ${styles.grey};
     margin-right: 1rem;
   }
-  a {
-    color: ${styles.white};
-    position: relative;
-    padding: 0 4px;
-    z-index: 1;
-    &:active {
-      color: ${styles.blueLight};
-    }
-    &::after {
-      background: ${styles.blue};
-      bottom: 0;
-      content: "";
-      height: 100%;
-      left: 0;
-      position: absolute;
-      transition: height 0.2s ease;
-      width: 100%;
-      z-index: -1;
-    }
-    &:hover {
-      color: ${styles.text};
-      &::after {
-        height: 2px;
-      }
-    }
-  }
   &:not(:last-child) {
     margin-bottom: 1rem;
   }

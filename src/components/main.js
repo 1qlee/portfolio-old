@@ -14,14 +14,16 @@ const Main = styled.div`
 `
 
 const MainColumn = styled.div`
-  padding: 1rem;
+  padding: 1rem 0;
   width: 50%;
   &.is-flex {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-left: 2rem;
     @media only screen and (max-width: 840px) {
       justify-content: center;
+      margin-left: 0;
     }
   }
   @media only screen and (max-width: 840px) {
@@ -39,7 +41,7 @@ const MainBlock = styled.div`
   &.clear-nav {
     height: calc(100vh - 155px);
     @media only screen and (max-height: 750px) {
-      height: auto;
+      height: 600px;
     }
     @media only screen and (max-width: 780px) {
       height: auto;
@@ -47,6 +49,12 @@ const MainBlock = styled.div`
   }
   &:not(:last-child) {
     margin-bottom: 1rem;
+  }
+  @media only screen and (max-height: 750px) {
+    height: 600px;
+  }
+  @media only screen and (max-width: 780px) {
+    height: auto;
   }
   @media only screen and (max-width: 1320px) {
     padding: 120px 0;
