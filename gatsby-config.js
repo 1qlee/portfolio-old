@@ -5,6 +5,7 @@ module.exports = {
     linkedin: 'https://www.linkedin.com/in/wonkyulee93/',
     twitter: 'https://twitter.com/wonq33',
     email: 'mailto:wonq33@gmail.com',
+    resume: 'https://www.dropbox.com/s/k4nlv3kd5g355bv/Wonkyu%20Lee%20-%20Resume_2018.pdf'
   },
   plugins: [
     {

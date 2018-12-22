@@ -6,6 +6,7 @@ import {IconLink} from "./icon"
 import GithubIcon from "../../assets/github.svg"
 import TwitterIcon from "../../assets/twitter.svg"
 import LinkedinIcon from "../../assets/linkedin.svg"
+import ResumeIcon from "../../assets/resume.svg"
 
 const SocialIconsContainer = styled.div`
   display: flex;
@@ -29,6 +30,7 @@ export default () => (
       query {
         site {
           siteMetadata {
+            resume,
             github,
             linkedin,
             twitter
@@ -38,6 +40,9 @@ export default () => (
     }
     render={data => (
       <SocialIconsContainer>
+        <IconLink className="social-icon" href={data.site.siteMetadata.resume} target="_blank" rel="noreferrer" title="Resume">
+          <ResumeIcon />
+        </IconLink>
         <IconLink className="social-icon" href={data.site.siteMetadata.github} target="_blank" rel="noreferrer" title="GitHub">
           <GithubIcon />
         </IconLink>
