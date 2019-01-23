@@ -2,15 +2,15 @@ import React from "react"
 import styles from "../components/styles"
 import { Helmet } from "react-helmet"
 import {FlexContainer} from "../components/containers"
-import {ImageContainer, Image} from "../components/image"
+import {Image} from "../components/image"
 import {MainContainer, MainBlock, MainColumn} from "../components/main"
 import {TagHeader} from "../components/headers"
 import Content from "../components/content"
 
-import domahub from "./domahub.png"
-import zltech from "./zl.png"
-import unicorn from "./unicorn.png"
-import favicon from "./favicon.ico"
+import domahub from "../images/domahub.png"
+import zltech from "../images/zl.png"
+import unicorn from "../images/unicorn.png"
+import favicon from "../images/favicon.ico"
 
 import "./css/reset.css"
 
@@ -25,9 +25,9 @@ export default () => (
     <MainBlock className="clear-nav">
       <FlexContainer>
         <MainColumn>
-          <ImageContainer>
+          <figure>
             <Image src={domahub} />
-          </ImageContainer>
+          </figure>
         </MainColumn>
         <MainColumn className="is-flex">
           <Content className="fade-in-down" id="domahub">
@@ -59,18 +59,18 @@ export default () => (
           </Content>
         </MainColumn>
         <MainColumn className="is-flex">
-          <ImageContainer>
+          <figure>
             <Image src={unicorn} />
-          </ImageContainer>
+          </figure>
         </MainColumn>
       </FlexContainer>
     </MainBlock>
     <MainBlock className="has-items-center">
       <FlexContainer>
         <MainColumn>
-          <ImageContainer>
+          <figure>
             <Image src={zltech} />
-          </ImageContainer>
+          </figure>
         </MainColumn>
         <MainColumn className="is-flex">
           <Content id="zltech">

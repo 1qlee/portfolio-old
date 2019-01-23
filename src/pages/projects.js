@@ -2,14 +2,14 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import styles from "../components/styles"
 import {FlexContainer} from "../components/containers"
-import {ImageContainer, Image} from "../components/image"
+import {Image} from "../components/image"
 import {MainContainer, MainBlock, MainColumn} from "../components/main"
 import {TagHeader} from "../components/headers"
 import Content from "../components/content"
 import Tag from "../components/tag"
 
-import tasker from "./tasker.png"
-import favicon from "./favicon.ico"
+import tasker from "../images/tasker.png"
+import favicon from "../images/favicon.ico"
 
 import "./css/reset.css"
 
@@ -24,9 +24,9 @@ export default () => (
     <MainBlock className="clear-nav">
       <FlexContainer>
         <MainColumn>
-          <ImageContainer>
+          <figure>
             <Image src={tasker} />
-          </ImageContainer>
+          </figure>
         </MainColumn>
         <MainColumn>
           <Content className="fade-in-down">

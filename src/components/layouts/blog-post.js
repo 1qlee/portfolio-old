@@ -8,7 +8,7 @@ import NavBar from "../nav"
 import Content from "../content"
 import styles from "../styles"
 
-import favicon from "../../pages/favicon.ico"
+import favicon from "../../images/favicon.ico"
 
 import "../../pages/css/reset.css"
 

@@ -1,10 +1,6 @@
+import React from "react"
 import styled from "styled-components"
 import styles from "./styles"
-
-const ImageContainer = styled.figure`
-  display: block;
-  position: relative;
-`
 
 const Image = styled.img`
   animation: 0.6s popIn cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -24,5 +20,43 @@ const Image = styled.img`
     margin: 0 auto;
   }
 `
+
+class ImageContainer extends React.Component {
+  state = {
+    image: null
+  }
+
+  componentDidMount() {
+    this.setState({
+      image: this.props.image
+    })
+  }
+
+  handleMouseEnter = () => {
+    this.setState({
+      image: this.props.hoverImage
+    })
+  }
+
+  handleMouseLeave = () => {
+    this.setState({
+      image: this.props.image
+    })
+  }
+
+  handleClick = () => {
+    this.setState({
+      image: this.props.clickImage
+    })
+  }
+
+  render() {
+    return (
+      <figure>
+        <Image src={this.state.image} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} onClick={this.handleClick}/>
+      </figure>
+    )
+  }
+}
 
 export {ImageContainer, Image}

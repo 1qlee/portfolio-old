@@ -8,11 +8,13 @@ import Anchor from "../components/anchor"
 import ButtonLink from "../components/button"
 import SocialBar from "../components/socialBar"
 import {FlexContainer} from "../components/containers"
-import {ImageContainer, Image} from "../components/image"
+import {ImageContainer} from "../components/image"
 
 import AtIcon from "../../assets/at.svg"
-import wonkyu from "./wonkyu.jpg"
-import favicon from "./favicon.ico"
+import wonkyu from "../images/wonkyu.jpg"
+import wonkyuHover from "../images/wonkyu2.jpg"
+import wonkyuClick from "../images/wonkyu3.jpg"
+import favicon from "../images/favicon.ico"
 
 import "./css/reset.css"
 
@@ -27,9 +29,7 @@ export default ({ data }) => (
     <MainBlock className="clear-nav">
       <FlexContainer>
         <MainColumn>
-          <ImageContainer>
-            <Image src={wonkyu} />
-          </ImageContainer>
+          <ImageContainer image={wonkyu} hoverImage={wonkyuHover} clickImage={wonkyuClick} />
         </MainColumn>
         <MainColumn>
           <Content className="fade-in-down">

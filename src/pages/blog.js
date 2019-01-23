@@ -7,7 +7,7 @@ import {MainContainer} from "../components/main"
 import Anchor from "../components/anchor"
 import Content from "../components/content"
 
-import favicon from "./favicon.ico"
+import favicon from "../images/favicon.ico"
 
 import "./css/reset.css"
 
