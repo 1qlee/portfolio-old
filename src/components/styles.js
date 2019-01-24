@@ -11,6 +11,8 @@ const styles = {
   text: "#444",
   whiteLight: "rgba(255,255,255,0.66)",
   white: "#fff",
+  black: "#000",
+  mint: "#36c18c"
 }
 
 export default styles

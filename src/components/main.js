@@ -93,7 +93,7 @@ class MainContainer extends React.Component {
       case "experience":
         return styles.green
       case "projects":
-        return styles.purple
+        return styles.mint
       default:
         return styles.blue
     }
@@ -107,6 +107,7 @@ class MainContainer extends React.Component {
       if (scrollValue > 700) {
         newColor = styles.blue
         this.changeColor(newColor)
+
         if (scrollValue > 1400) {
           newColor = styles.red
           this.changeColor(newColor)
@@ -114,6 +115,17 @@ class MainContainer extends React.Component {
       }
       else {
         newColor = styles.green
+        this.changeColor(newColor)
+      }
+    }
+
+    if (this.props.path === "projects") {
+      if (scrollValue > 500) {
+        newColor = styles.purple
+        this.changeColor(newColor)
+      }
+      else {
+        newColor = styles.mint
         this.changeColor(newColor)
       }
     }

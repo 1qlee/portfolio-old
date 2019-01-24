@@ -2,7 +2,7 @@ import React from "react"
 import styles from "../components/styles"
 import { Helmet } from "react-helmet"
 import {FlexContainer} from "../components/containers"
-import {Image} from "../components/image"
+import {Image, ImageLink} from "../components/image"
 import {MainContainer, MainBlock, MainColumn} from "../components/main"
 import {TagHeader} from "../components/headers"
 import Content from "../components/content"
@@ -26,7 +26,9 @@ export default () => (
       <FlexContainer>
         <MainColumn>
           <figure>
-            <Image src={domahub} />
+            <ImageLink href="https://domahub.com" rel="noreferrer" target="_blank" color={styles.green} text="View Website">
+              <Image src={domahub} alt="Screenshot of DomaHub's Website" />
+            </ImageLink>
           </figure>
         </MainColumn>
         <MainColumn className="is-flex">
@@ -51,7 +53,7 @@ export default () => (
             <h1>Unicorn Line<span className="is-grey"> (2018)</span></h1>
             <TagHeader color={styles.blue}>Developer, Freelance</TagHeader>
             <p>
-              An online catalog for browsing Unicorn Graphic's line of products.
+              Unicorn Line represents products from Unicorn Graphics, a commercial printing company.
             </p>
             <p>
               I created an online version of the client's product catalog. I refreshed the catalog design and implemented a CMS for easy editing.
@@ -60,7 +62,9 @@ export default () => (
         </MainColumn>
         <MainColumn className="is-flex">
           <figure>
-            <Image src={unicorn} />
+            <ImageLink href="https://unicornline.com" rel="noreferrer" target="_blank" color={styles.blue} text="View Website">
+              <Image src={unicorn} />
+            </ImageLink>
           </figure>
         </MainColumn>
       </FlexContainer>
@@ -69,7 +73,9 @@ export default () => (
       <FlexContainer>
         <MainColumn>
           <figure>
-            <Image src={zltech} />
+            <ImageLink href="https://zlti.com" rel="noreferrer" target="_blank" color={styles.red} text="View Website">
+              <Image src={zltech} />
+            </ImageLink>
           </figure>
         </MainColumn>
         <MainColumn className="is-flex">
