@@ -32,7 +32,7 @@ export default () => (
         </MainColumn>
         <MainColumn>
           <Content className="fade-in-down">
-            <h1>Chatwick<span className="is-grey"> (2018)</span></h1>
+            <h1>Chatwick<span className="is-grey"></span></h1>
             <TagHeader color={styles.mint}>Full-stack Application</TagHeader>
             <p>
               A real-time, multi-user chat application built with Socket.IO and React.

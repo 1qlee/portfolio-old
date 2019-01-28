@@ -71,10 +71,10 @@ class NavBar extends React.Component {
 
   checkPath(url) {
     if (this.state.path === url) {
-      return "nav-link is-active";
+      return "nav-link is-active"
     }
     else {
-      return "nav-link";
+      return "nav-link"
     }
   }
 

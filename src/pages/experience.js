@@ -33,7 +33,7 @@ export default () => (
         </MainColumn>
         <MainColumn className="is-flex">
           <Content className="fade-in-down" id="domahub">
-            <h1>DomaHub<span className="is-grey"> (Current)</span></h1>
+            <h1>DomaHub<span className="is-grey"></span></h1>
             <TagHeader color={styles.green}>Co-founder &#38; Developer</TagHeader>
             <p>
               DomaHub is an online platform for domain name portfolio management.
@@ -50,7 +50,7 @@ export default () => (
       <FlexContainer className="is-mobile">
         <MainColumn>
           <Content id="unicorn">
-            <h1>Unicorn Line<span className="is-grey"> (2018)</span></h1>
+            <h1>Unicorn Line<span className="is-grey"></span></h1>
             <TagHeader color={styles.blue}>Developer, Freelance</TagHeader>
             <p>
               Unicorn Line represents products from Unicorn Graphics, a commercial printing company.
@@ -80,7 +80,7 @@ export default () => (
         </MainColumn>
         <MainColumn className="is-flex">
           <Content id="zltech">
-            <h1>ZL Tech<span className="is-grey"> (2015)</span></h1>
+            <h1>ZL Tech<span className="is-grey"></span></h1>
             <TagHeader color={styles.red}>Product Specialist</TagHeader>
             <p>
               ZL is a leading software company in the information governance space.

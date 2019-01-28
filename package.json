@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "1Q Portfolio Site",
+  "description": "Personal portfolio",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",

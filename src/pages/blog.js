@@ -12,7 +12,7 @@ import favicon from "../images/favicon.ico"
 import "./css/reset.css"
 
 export default ({ data }) => (
-  <MainContainer>
+  <MainContainer path="blog">
     <Helmet>
       <meta charSet="utf-8" />
       <title>Blog - Wonkyu Lee</title>
