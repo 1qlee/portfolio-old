@@ -11,15 +11,12 @@ import {FlexContainer} from "../components/containers"
 import {ProfileImage} from "../components/image"
 
 import AtIcon from "../../assets/at.svg"
-import wonkyu from "../images/wonkyu.jpg"
-import wonkyuHover from "../images/wonkyu2.jpg"
-import wonkyuClick from "../images/wonkyu3.jpg"
 import favicon from "../images/favicon.ico"
 
 import "./css/reset.css"
 
 export default ({ data }) => (
-  <MainContainer path="index">
+  <MainContainer style={{overflow: "scroll"}} path="index">
     <Helmet>
       <meta charSet="utf-8" />
       <title>Home - Wonkyu Lee</title>
@@ -29,7 +26,7 @@ export default ({ data }) => (
     <MainBlock className="clear-nav">
       <FlexContainer>
         <MainColumn>
-          <ProfileImage image={wonkyu} hoverImage={wonkyuHover} clickImage={wonkyuClick} />
+          <ProfileImage />
         </MainColumn>
         <MainColumn>
           <Content className="fade-in-down">

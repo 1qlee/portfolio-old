@@ -11,11 +11,17 @@ const Main = styled.div`
   transition: background 0.3s ease-in-out;
   height: 100vh;
   width: 100%;
+  &.force-scrollbar {
+    overflow-y: scroll;
+  }
 `
 
 const MainColumn = styled.div`
   padding: 1rem 0;
   width: 50%;
+  &:first-child {
+    margin-right: 2rem;
+  }
   &.is-flex {
     display: flex;
     align-items: center;

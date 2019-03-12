@@ -2,6 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import styles from "./styles"
 
+import wonkyu from "../images/wonkyu.jpg"
+import wonkyuHover from "../images/wonkyu2.jpg"
+import wonkyuClick from "../images/wonkyu3.jpg"
+
 const Image = styled.img`
   animation: 0.6s popIn cubic-bezier(0.25, 0.46, 0.45, 0.94);
   box-shadow: 0 10px 30px 0 ${styles.shadow};
@@ -58,40 +62,55 @@ const ImageLink = styled.a`
   }
 `
 
+const ProfileImageContainer = styled.div`
+  height: 424px;
+  img {
+    @media only screen and (max-width: 840px) {
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 515px) {
+    height: auto;
+  }
+`
+
 class ProfileImage extends React.Component {
   state = {
-    image: null
+    image: null,
+    normalImage: wonkyu,
+    hoverImage: wonkyuHover,
+    clickedImage: wonkyuClick
   }
 
   componentDidMount() {
     this.setState({
-      image: this.props.image
+      image: this.state.normalImage
     })
   }
 
   handleMouseEnter = () => {
     this.setState({
-      image: this.props.hoverImage
+      image: this.state.hoverImage
     })
   }
 
   handleMouseLeave = () => {
     this.setState({
-      image: this.props.image
+      image: this.state.normalImage
     })
   }
 
   handleClick = () => {
     this.setState({
-      image: this.props.clickImage
+      image: this.state.clickedImage
     })
   }
 
   render() {
     return (
-      <div>
+      <ProfileImageContainer>
         <Image src={this.state.image} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} onClick={this.handleClick}/>
-      </div>
+      </ProfileImageContainer>
     )
   }
 }
