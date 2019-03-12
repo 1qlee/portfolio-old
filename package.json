@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "next",
+    "gatsby": "^2.1.30",
     "gatsby-plugin-react-helmet": "^3.0.9",
     "gatsby-plugin-react-svg": "^2.1.0",
     "gatsby-plugin-styled-components": "^3.0.7",
