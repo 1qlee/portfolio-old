@@ -89,9 +89,9 @@ class ProfileImage extends React.Component {
 
   render() {
     return (
-      <figure>
+      <div>
         <Image src={this.state.image} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} onClick={this.handleClick}/>
-      </figure>
+      </div>
     )
   }
 }
