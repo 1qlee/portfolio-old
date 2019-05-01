@@ -40,7 +40,7 @@ export default () => (
             </p>
             <p>
               As a
-              co-founder (with my brother), I grew DomaHub into a business used by hundreds of domainers. I handle front-end development as well as marketing and other business related functions.
+              co-founder (with my brother), I grew DomaHub into a business used by hundreds of domainers. DomaHub was acquired by Efty in 2019.
             </p>
           </Content>
         </MainColumn>

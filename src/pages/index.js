@@ -33,8 +33,8 @@ export default ({ data }) => (
             <h1>Wonkyu Lee</h1>
             <small className="is-grey">Pronunciation: [one-queue, 1-Q, won-kyoo]</small>
             <p>
-              A web developer from NYC that designs and builds websites.
-              Spent the past two years working on <Anchor href="https://www.domahub.com" target="_blank" rel="noreferrer">DomaHub</Anchor>, a domain management platform. Currently looking for a full-time front-end developer position.
+              A web developer from NYC building and designing websites.
+              Spent the past two years working on <Anchor href="https://www.domahub.com" target="_blank" rel="noreferrer">DomaHub</Anchor>, a domain management platform.
             </p>
           </Content>
           <Content className="is-flex is-mobile fade-in-up">
